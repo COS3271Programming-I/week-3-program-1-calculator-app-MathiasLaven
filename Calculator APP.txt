@@ -1,0 +1,35 @@
+package my_project;
+import java.util.Scanner;
+
+public class MyClass {
+	static Scanner userinput = new Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.println("Please provide two numbers to do calculations on. \nThese numbers must be positive but can have a decimal component.");
+		System.out.println("");
+		
+		System.out.print("Enter your first number: \n>>");
+		double x = userinput.nextDouble();
+		System.out.print("Enter your second number: \n>>");
+		double y = userinput.nextDouble();
+		
+		//turned into variables for easy debugging
+		double addResult = x + y;
+		double multResult = x * y;
+		double divQuotient = x / y;
+		double expResult = Math.pow(x, y);
+		
+		//log y(x) = log z(x) / log z(y)
+		//z can be anything, here it's 10 for convenience
+		//source: https://en.wikipedia.org/wiki/Logarithm#Change_of_base
+		double logResult = Math.log(x) / Math.log(y); 
+		
+		System.out.println("");
+
+		System.out.format("x + y = %.2f \n", addResult);
+		System.out.format("x * y = %.2f \n", multResult);
+		System.out.format("x / y = %.2f \n", divQuotient);
+		System.out.format("x ^ y = %.2f \n", expResult);
+		System.out.format("log y(x) = %.2f \n", logResult);
+		
+	}
+}

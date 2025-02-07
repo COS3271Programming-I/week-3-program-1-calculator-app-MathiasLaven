@@ -1,0 +1,13 @@
+Please provide two numbers to do calculations on. 
+These numbers must be positive but can have a decimal component.
+
+Enter your first number: 
+>>1
+Enter your second number: 
+>>2
+
+x + y = 3.00 
+x * y = 2.00 
+x / y = 0.50 
+x ^ y = 1.00 
+log y(x) = 0.00 
